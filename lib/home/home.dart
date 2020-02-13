@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:timeapp2/choose/choose.dart';
 import 'package:timeapp2/components/loading/loading.dart';
+import 'package:timeapp2/home/contents/contents.dart';
+import 'package:timeapp2/home/redirectButton/redirectButton.dart';
 import 'package:timeapp2/services/worldTime.dart';
 
 class Home extends StatefulWidget {
@@ -45,20 +47,9 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  FlatButton.icon(
-                      onPressed: () {
-                        goToChoosePage();
-                      },
-                      icon: Icon(
-                        Icons.location_on,
-                        color: Colors.grey[200],
-                      ),
-                      label: Text(
-                        'Go to locations page',
-                        style: TextStyle(
-                          color: Colors.grey[200],
-                        ),
-                      )),
+                  RedirectButton(
+                    goToChoosePage: goToChoosePage,
+                  ),
                 ],
               ),
               SizedBox(
