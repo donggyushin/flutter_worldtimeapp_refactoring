@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timeapp2/choose/choose.dart';
 import 'package:timeapp2/components/loading/loading.dart';
-import 'package:timeapp2/home/contents/contents.dart';
 import 'package:timeapp2/home/redirectButton/redirectButton.dart';
 import 'package:timeapp2/services/worldTime.dart';
 
